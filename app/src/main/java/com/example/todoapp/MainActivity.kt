@@ -76,7 +76,7 @@ fun HomeScreen(modifier: Modifier = Modifier) {
 @Composable
 fun ReminderList( reminderList: List<Reminder>, modifier: Modifier = Modifier) {
     LazyColumn(modifier = modifier) {
-        items (reminderList) { item ->
+        items(reminderList) { item ->
             ReminderCard(
                 reminder = item,
             )
