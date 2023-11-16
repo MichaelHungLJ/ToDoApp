@@ -70,7 +70,23 @@ fun HomeScreen(modifier: Modifier = Modifier) {
     remList.add(item7)
     remList.add(item8)
 
-    ReminderList(reminderList = remList)
+
+    Column (
+        verticalArrangement = Arrangement.Center,
+        modifier = Modifier,
+    ) {
+        Text(
+
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 10.dp, top = 20.dp),
+            fontSize = 24.sp,
+            fontWeight = FontWeight.Bold,
+            text = "Reminder List"
+        )
+        ReminderList(reminderList = remList)
+
+    }
 }
 
 @Composable
@@ -94,7 +110,7 @@ fun ReminderCard(reminder: Reminder, modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxWidth()
             .fillMaxHeight(1f)
-            .padding(10.dp,10.dp)
+            .padding(10.dp, 10.dp)
     ){
         Row (
             modifier = Modifier.fillMaxSize(),
