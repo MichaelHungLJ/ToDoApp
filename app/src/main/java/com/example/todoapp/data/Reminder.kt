@@ -1,6 +1,7 @@
 package com.example.todoapp.data
 
-data class Reminder(
+class Reminder (
     val title: String,
-    val content: String,
-)
+    val content: String) {
+
+}

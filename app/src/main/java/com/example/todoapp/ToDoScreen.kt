@@ -20,11 +20,14 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.todoapp.data.Reminder
 
+
+@Preview (showBackground = true)
 @Composable
 fun ToDoApp (remViewModel : ReminderViewModel = viewModel()) {
 
@@ -48,6 +51,7 @@ fun ToDoApp (remViewModel : ReminderViewModel = viewModel()) {
 
     }
 }
+
 
 @Composable
 fun ReminderList(reminderSet: Set<Reminder>, modifier: Modifier = Modifier) {
